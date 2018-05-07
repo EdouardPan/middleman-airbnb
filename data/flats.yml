@@ -2,11 +2,14 @@
   avatar: 'https://kitt.lewagon.com/placeholder/users/ssaunier'
   city: 'Paris'
   picture: 'https://kitt.lewagon.com/placeholder/cities/paris'
+  rating: 4
 - name: 'Boris'
   avatar: 'https://kitt.lewagon.com/placeholder/users/papillard'
   city: 'London'
   picture: 'https://kitt.lewagon.com/placeholder/cities/london'
+  rating: 3
 - name: 'Romain'
-  avatar: 'https://kitt.lewagon.com/placeholder/users/monsieurpapillard'
+  avatar: 'https://kitt.lewagon.com/placeholder/users/monsieurpaillard'
   city: 'Tokyo'
   picture: 'https://kitt.lewagon.com/placeholder/cities/tokyo'
+  rating: 5

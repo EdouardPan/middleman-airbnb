@@ -1,9 +1,12 @@
-<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-  <div class="card-category">Popular</div>
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= flat.picture %>);">
+  <div class="card-category"><%= flat.city %></div>
   <div class="card-description">
-    <h2>Le Wagon Shanghai</h2>
-    <p>Very cool city, the best</p>
+    <h2><%= flat.name %></h2>
+    <p>Very cool flat, the best</p>
+    <% (1..5).to_a.each_with_index do |_,index| %>
+      <i class="fa fa-star" style="color: <%= index<flat.rating ? "#ffb400" : "#E1E6E1"%> "></i>
+    <% end %>
   </div>
-  <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+  <img class="card-user" src=<%= flat.avatar %>>
   <a class="card-link" href="#" ></a>
 </div>

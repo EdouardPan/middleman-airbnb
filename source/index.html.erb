@@ -2,18 +2,17 @@
 title: Le Wagon - Middleman
 ---
 
-<%= partial "layouts/banner" %>   <!-- inject layouts/_navbar.html.erb -->
+  <%= partial "layouts/banner" %>   <!-- inject layouts/_navbar.html.erb -->
 
-<div class="cards">
-  <h1>Recent flats</h1>
-  <div class="container">
+  <div class="container" id="home_flat_cards">
+    <h2 class="text-center">Recent flats</h2>
     <div class="row">
       <% data.flats.each do |flat| %>
         <div class="col-xs-12 col-sm-6 col-lg-4">
-          <%= partial "layouts/cards" %>   <!-- inject layouts/_navbar.html.erb -->
+          <%= partial "layouts/cards", :locals => { :flat => flat} %>   <!-- inject layouts/_navbar.html.erb -->
         </div>
       <% end %>
     </div>
-</div>
+  </div>
 
 </div>
